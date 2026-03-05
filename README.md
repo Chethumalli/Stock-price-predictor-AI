@@ -65,12 +65,18 @@ The model generates comprehensive visual reports to evaluate accuracy:
 
 ## 📂 Project Structure
 ```plaintext
-├── data/               # Local datasets (if applicable)
-├── models/             # Saved model weights (.h5 or .keras)
-├── notebooks/          # Jupyter notebooks for experimentation
-├── src/                # Source code for data processing and modeling
-├── requirements.txt    # Project dependencies
-└── README.md           # Project documentation
+ai-stock-analyst
+│
+├── app.py
+├── model.py
+├── rag.py
+├── requirements.txt
+│
+├── templates
+│   └── index.html
+│
+└── static
+    └── style.css
 ```
 ## 🤝 Contributing
 Contributions make the open-source community an amazing place to learn and create.
@@ -79,4 +85,11 @@ Contributions make the open-source community an amazing place to learn and creat
 2. **Create** your Feature Branch:
    ```bash
    git checkout -b feature/AmazingFeature
-```
+
+👨‍💻 Author
+
+**Chethan C Malli**  
+AI & ML Enthusiast  
+Building scalable AI systems 🚀  
+
+GitHub: https://github.com/Chethumalli  
