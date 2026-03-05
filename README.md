@@ -32,22 +32,24 @@ Ensure you have Python 3.8 or higher installed on your machine.
 ### 2. Installation
 Clone the repository and install the required dependencies:
 
-```bash
 ### Clone the repository
+```bash
 git clone [https://github.com/Chethumalli/Stock-price-predictor-AI.git](https://github.com/Chethumalli/Stock-price-predictor-AI.git)
-
+```
 ### Navigate into the project directory
+```bash
 cd Stock-price-predictor-AI
-
+```
 ### Install requirements
+```
 pip install -r requirements.txt'''
-
+```
 ### 🚀 3. Usage
 Run the main script to start the analysis and prediction process:
 
 ```bash
 python main.py
-
+```
 ## 🏗️ Model Architecture
 The core of this project is a multi-layered **Recurrent Neural Network (RNN)**:
 
@@ -69,7 +71,7 @@ The model generates comprehensive visual reports to evaluate accuracy:
 ├── src/                # Source code for data processing and modeling
 ├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
-
+```
 ## 🤝 Contributing
 Contributions make the open-source community an amazing place to learn and create.
 
@@ -77,3 +79,4 @@ Contributions make the open-source community an amazing place to learn and creat
 2. **Create** your Feature Branch:
    ```bash
    git checkout -b feature/AmazingFeature
+```
