@@ -13,27 +13,66 @@
 
 <body>
 
-<div class="container">
+<div class="wrapper">
+
+<!-- LEFT SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>Popular Stocks</h2>
+
+<div class="stock" onclick="selectStock('AAPL')">Apple (AAPL)</div>
+<div class="stock" onclick="selectStock('TSLA')">Tesla (TSLA)</div>
+<div class="stock" onclick="selectStock('NVDA')">NVIDIA (NVDA)</div>
+<div class="stock" onclick="selectStock('AMZN')">Amazon (AMZN)</div>
+<div class="stock" onclick="selectStock('GOOGL')">Google (GOOGL)</div>
+<div class="stock" onclick="selectStock('META')">Meta (META)</div>
+<div class="stock" onclick="selectStock('MSFT')">Microsoft (MSFT)</div>
+
+</div>
+
+
+<!-- MAIN DASHBOARD -->
+
+<div class="main">
 
 <h1>🤖 AI Stock Analyst Dashboard</h1>
 
+<div class="search-box">
 <input id="ticker" placeholder="Enter Stock Symbol (AAPL)">
-
 <button onclick="analyze()">Analyze</button>
+</div>
 
-<div id="result"></div>
+<div id="result" class="result-box"></div>
 
-<canvas id="chart" width="600" height="300"></canvas>
+<canvas id="chart"></canvas>
+
+<div id="analysis" class="analysis-box"></div>
 
 </div>
+
+</div>
+
 
 <script>
 
 let chart
 
+function selectStock(symbol){
+
+document.getElementById("ticker").value = symbol
+analyze()
+
+}
+
 async function analyze(){
 
 const ticker = document.getElementById("ticker").value
+
+if(!ticker){
+alert("Enter stock symbol")
+return
+}
 
 const res = await fetch("/analyze",{
 method:"POST",
@@ -46,9 +85,11 @@ const data = await res.json()
 document.getElementById("result").innerHTML = `
 <h2>Current Price: $${data.current_price}</h2>
 <h2>Predicted Price: $${data.prediction}</h2>
-<h2>Signal: ${data.signal}</h2>
-<p>${data.analysis.replace(/\n/g,"<br>")}</p>
+<h2 class="signal">${data.signal}</h2>
 `
+
+document.getElementById("analysis").innerHTML =
+data.analysis.replace(/\n/g,"<br>")
 
 const ctx = document.getElementById("chart").getContext("2d")
 
@@ -62,8 +103,24 @@ data:{
 labels:data.dates,
 datasets:[{
 label:"Stock Price",
-data:data.prices
+data:data.prices,
+borderColor:"#00ff9f",
+borderWidth:2,
+tension:0.3,
+pointRadius:0
 }]
+},
+options:{
+responsive:true,
+plugins:{
+legend:{
+labels:{color:"white"}
+}
+},
+scales:{
+x:{ticks:{color:"white"}},
+y:{ticks:{color:"white"}}
+}
 }
 })
 
@@ -72,5 +129,4 @@ data:data.prices
 </script>
 
 </body>
-
 </html>
