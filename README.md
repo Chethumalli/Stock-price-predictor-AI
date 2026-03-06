@@ -83,16 +83,15 @@ Visualization & Insights
 ```
 Stock-price-predictor-AI
 │
-├── data
-│   ├── stock_dataset.csv
+├── static
+│   ├── style.css
 │
-├── models
-│   ├── trained_model.h5
+├── tamplates
+│   ├── index.html
 │
-├── notebooks
-│   ├── stock_analysis.ipynb
-│
-├── stock_predictor.py
+├── app.py
+├── rag.py
+├── model.py
 ├── requirements.txt
 └── README.md
 ```
@@ -143,15 +142,8 @@ pip install -r requirements.txt
 Run the prediction script
 
 ```bash
-python stock_predictor.py
+python app.py
 ```
-
-Or open the notebook
-
-```bash
-jupyter notebook
-```
-
 ---
 
 # 📊 Dataset
