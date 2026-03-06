@@ -4,7 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An advanced AI-powered stock market forecasting tool that leverages Deep Learning to predict future stock prices based on historical data.
-
 ---
 
 ## 🚀 Overview
