@@ -12,7 +12,6 @@
 <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/>
 <img src="https://img.shields.io/badge/AI-Machine%20Learning-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Deep%20Learning-LSTM-red?style=for-the-badge"/>
-
 </div>
 
 ---
