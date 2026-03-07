@@ -100,8 +100,8 @@ Stock-price-predictor-AI
 # 📊 Example Prediction
 
 ```
-Actual Price      : 150.20
-Predicted Price   : 147.83
+Actual Price      : $150.20
+Predicted Price   : $147.83
 Prediction Error  : 1.58%
 ```
 
