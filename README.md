@@ -197,12 +197,6 @@ https://github.com/Chethumalli
 
 ---
 
-# 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
 <div align="center">
 
 ### 🚀 Built with Python, AI and Machine Learning
