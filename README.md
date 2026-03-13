@@ -159,16 +159,6 @@ These features are used to train the deep learning model to identify market patt
 
 ---
 
-# 🔮 Future Improvements
-
-✅ Real-time stock prediction  
-✅ Web dashboard with Streamlit  
-✅ Multiple ML model comparison  
-✅ Financial news sentiment analysis  
-✅ Auto trading signals  
-
----
-
 # 🤝 Contributing
 
 Contributions are welcome!
