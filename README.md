@@ -195,12 +195,3 @@ Full Stack Developer
 GitHub  
 https://github.com/Chethumalli
 
----
-
-<div align="center">
-
-### 🚀 Built with Python, AI and Machine Learning
-
-<img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="200"/>
-
-</div>
